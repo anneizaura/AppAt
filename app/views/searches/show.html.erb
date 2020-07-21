@@ -1,1 +1,8 @@
-<%= @search.name  %>
+<% @json["items"].each do |item|  %>
+  <div>
+    <%= item["name"] %>
+    <%= item["forks"] %>
+    <%= item["description"] %>
+    <%= item["starsgaze_count"] %>
+  </div>
+<% end %>
