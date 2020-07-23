@@ -1,10 +1,14 @@
 <div class="form-group form-inline d-flex justify-content-center align-items-center">
   <div class="search">
     <h1>Choose 5 languages ​​of your choice to search</h1>
-      <%= form_tag("/search", method: "post") do %>
+      <%= form_tag("/", method: "get", class: "form-edition") do %>
         <%= label_tag(:q, "") %>
-        <%= text_field_tag(:q) %>
+        <%= text_field_tag(:q, nil, placeholder: "Seach language") %>
         <%= submit_tag("Search") %>
       <% end %>
   </div>
 </div>
+
+<% if @json.present? %>
+  <%= render "show", json: @json %>
+<% end %>
