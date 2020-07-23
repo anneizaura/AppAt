@@ -1,10 +1,12 @@
 <div class="form-group form-inline d-flex justify-content-center align-items-center">
   <div class="search">
     <h1>Choose 5 languages ​​of your choice to search</h1>
-      <%= form_tag("/", method: "get", class: "form-edition") do %>
+      <%= form_tag("/", method: "get") do %>
         <%= label_tag(:q, "") %>
-        <%= text_field_tag(:q, nil, placeholder: "Seach language") %>
-        <%= submit_tag("Search") %>
+        <div class="align">
+          <%= text_field_tag(:q, nil, placeholder: "Seach language", class: "justify-content-center align-items-center col-md-10") %>
+          <%= submit_tag("Search", class: "submit-edition") %>
+        </div>
       <% end %>
   </div>
 </div>
