@@ -11,8 +11,21 @@
 
       <div class="c-others">
         <%= item["language"] %>
-        <%= item["stargazers_count"] %>
+
+        <div class="stars d-flex justify-content-center align-items-center">
+          <div class="c-star">
+            <i class="fas fa-star"></i>
+          </div>
+          <div class="number-star">
+            <%= item["stargazers_count"] %>
+          </div>
+        </div>
+
+
+        <div class="c-forks">
+        <i class="fas fa-code-branch"></i>
         <%= item["forks"] %>
+        </div>
       </div>
     </div>
   <% end %>

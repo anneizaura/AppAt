@@ -28,5 +28,21 @@
 
 }
 .c-others {
-  flex-grow: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  font-size: 15px;
+}
+.star {
+
+}
+.c-star {
+  color: #f9d56e;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.number-star {
+  z-index: 1;
 }
