@@ -1,0 +1,32 @@
+.container {
+  border-radius: 10px;
+  margin: 60px 60px 60px 60px;
+  padding: 20px;
+  background-color: white;
+  font-family: 'Nunito', sans-serif;
+}
+
+#info-border-container {
+  border: 1px solid #66686f;
+}
+
+.c-name {
+  color: #3282b8;
+  margin: 0;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  .c-link {
+    text-decoration: none;
+    flex-grow:1;
+  }
+}
+
+.c-description {
+  color: #393e46;
+  margin: 0;
+
+}
+.c-others {
+  flex-grow: 1;
+}

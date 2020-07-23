@@ -1,9 +1,20 @@
-<% @json["items"].each do |item|  %>
-  <div>
-    <%= item["name"] %>
-    <%= item["forks"] %>
-    <%= item["description"] %>
-    <%= item["starsgaze_count"] %>
-    <%= item["html_url"] %>
-  </div>
-<% end %>
+<div class="container" id= "info-border-container">
+  <% @json["items"].each do |item|  %>
+    <div class="info">
+      <div class="c-name">
+        <%= item["name"].capitalize %>
+        <a class="c-link text-right" href= <%= item["html_url"] %> >Open repository details</a>
+      </div>
+      <div class="c-description">
+        <%= item["description"] %>
+      </div>
+
+      <div class="c-others">
+        <%= item["language"] %>
+        <%= item["stargazers_count"] %>
+        <%= item["forks"] %>
+      </div>
+    </div>
+  <% end %>
+
+</div>
