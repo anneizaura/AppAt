@@ -14,17 +14,20 @@
 
         <div class="stars d-flex justify-content-center align-items-center">
           <div class="c-star">
-            <i class="fas fa-star"></i>
+            <p class="tam-star"><i class="far fa-star"></i></p>
           </div>
           <div class="number-star">
             <%= item["stargazers_count"] %>
           </div>
         </div>
 
-
-        <div class="c-forks">
-        <i class="fas fa-code-branch"></i>
-        <%= item["forks"] %>
+        <div class="forks">
+          <div class="c-fork d-flex justify-content-center align-items-center">
+            <i class="fas fa-code-branch"></i>
+            <div class="number-fork">
+              <%= item["forks"] %>
+            </div>
+          </div>
         </div>
       </div>
     </div>
