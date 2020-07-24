@@ -4,8 +4,8 @@
       <%= form_tag("/", method: "get") do %>
         <%= label_tag(:q, "") %>
         <div class="align">
-          <%= text_field_tag(:q, nil, placeholder: "Seach language", class: "justify-content-center align-items-center col-md-10") %>
-          <%= submit_tag("Search", class: "submit-edition") %>
+        <%= text_field_tag(:q, nil, placeholder: "Seach language", class: "justify-content-center align-items-center col-md-10 search-bar") %>
+        <%= submit_tag("Search", class: "submit-edition") %>
         </div>
       <% end %>
   </div>
